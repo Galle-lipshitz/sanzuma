@@ -1,116 +1,131 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanzuma | Farm-to-Organization</title>
+    <title>Sanzuma - Connecting Farms to Organizations</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
         }
+
         header {
-            background-color: #4CAF50;
+            background: #4CAF50;
             color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
+            padding: 1rem 2rem;
             display: flex;
-            justify-content: center;
-            background-color: #333;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav a {
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav a {
             color: white;
-            padding: 14px 20px;
+            margin: 0 1rem;
             text-decoration: none;
-            text-align: center;
+            font-weight: bold;
         }
-        nav a:hover {
-            background-color: #575757;
-        }
+
         .hero {
             text-align: center;
-            padding: 50px;
+            padding: 4rem 2rem;
             background: url('hero-image.jpg') no-repeat center center/cover;
             color: white;
         }
-        .hero h1 {
-            font-size: 3rem;
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .hero p {
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+
+        .feature {
+            background: white;
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: calc(33% - 2rem);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 2rem;
+            background: #4CAF50;
+            color: white;
+        }
+
+        .cta button {
+            background: white;
+            color: #4CAF50;
+            border: none;
+            padding: 0.8rem 1.2rem;
             font-size: 1.2rem;
-        }
-        .cta-buttons {
-            margin-top: 20px;
-        }
-        .cta-buttons a {
-            text-decoration: none;
-            color: white;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            margin: 5px;
             border-radius: 5px;
-            display: inline-block;
+            cursor: pointer;
         }
-        .cta-buttons a:hover {
-            background-color: #45a049;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
+
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 1rem;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Sanzuma</h1>
-        <p>Bridging farms to communities for sustainable food solutions</p>
+        <h1>Sanzuma</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#offerings">Our Offerings</a>
-        <a href="#impact">Impact</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
 
-    <div class="hero">
-        <h1>Fresh Produce. Sustainable Practices.</h1>
-        <p>Delivering farm-fresh food directly to organizations and communities.</p>
-        <div class="cta-buttons">
-            <a href="#learn-more">Learn More</a>
-            <a href="#order">Order Now</a>
+    <section class="hero">
+        <h2>Effortlessly Connect Farms to Schools and Organizations</h2>
+        <p>Optimizing the supply chain to deliver fresh, local produce directly where it's needed.</p>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>Automated Ordering</h3>
+            <p>Organizations can search for and order from farms directly, reducing the need for manual communication.</p>
         </div>
-    </div>
-
-    <section id="about">
-        <h2>About Sanzuma</h2>
-        <p>At Sanzuma, we are committed to connecting local farms with organizations to promote health, sustainability, and community well-being. Our mission is to make fresh, nutritious produce accessible to everyone.</p>
+        <div class="feature">
+            <h3>Customizable Search</h3>
+            <p>Filter farms by distance, pricing, packaging, cleaning options, and delivery services.</p>
+        </div>
+        <div class="feature">
+            <h3>Centralized Data</h3>
+            <p>Save and access all your order history and preferences in one place for seamless operation.</p>
+        </div>
     </section>
 
-    <section id="offerings">
-        <h2>Our Offerings</h2>
-        <p>We provide fresh produce, customizable packages, and educational workshops to organizations looking to promote healthier lifestyles.</p>
-    </section>
-
-    <section id="impact">
-        <h2>Our Impact</h2>
-        <p>With your support, we have delivered thousands of pounds of fresh produce to local communities, reducing food waste and supporting sustainable farming practices.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@sanzuma.org | Phone: (123) 456-7890</p>
-        <p>Follow us on social media for updates and events!</p>
+    <section id="how-it-works" class="cta">
+        <h2>How It Works</h2>
+        <p>1. Sign up and create your account. 2. Search for farms that meet your needs. 3. Place your order directly through the platform. 4. Manage your preferences and track your orders in real-time.</p>
+        <button>Get Started</button>
     </section>
 
     <footer>
